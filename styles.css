@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--Eggshell);
+}
+
+
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+    --paragraph: 16px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 29rem;
+    width: 48rem;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+
+.title img {
+    width: 42rem;
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    color: var(--DarkCharcoal);
+    margin-top: 2rem;
+    margin-bottom: 15px;
+}
+
+
+h2 {
+    font-size: var(--paragraph);
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: var(--WengeBrown);
+    margin-bottom: 3rem;
+
+}
+
+
+.preparation {
+    background-color: var(--RoseWhite);
+    padding: 20px;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+
+}
+
+
+h3 {
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: var(--DarkRaspberry);
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: var(--paragraph);
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: var(--WengeBrown);
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.list {
+    margin-left: 1.5rem;
+}
+
+
+h5 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 30px;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    color: var(--Nutmeg);
+}
+
+ol {
+    font-family: "Outfit", sans-serif;
+    margin-left: 1.5rem;
+    color: var(--Nutmeg);
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 50px;
+
+}
+
+
+.ingredients {
+    border-bottom: 1px solid var(--LightGrey);
+    padding-bottom: 20px;
+}
+
+
+.instrucions {
+    border-bottom: 1px solid var(--LightGrey);
+    padding-bottom: 20px;
+}
+
+
+.last {
+    font-size: var(--paragraph);
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: var(--WengeBrown);
+    margin-bottom: 2rem;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.one {
+    font-size: var(--paragraph);
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    color: var(--WengeBrown);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    grid-column: 1;
+}
+
+.two {
+    font-size: var(--paragraph);
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    color: var(--Nutmeg);
+    margin-bottom: 1rem;
+    grid-column: 2;
+}
+
+
+.one,
+.two {
+    border-bottom: 1px solid #cccccc51;
+    padding: 5px;
+}
+
+
+@media (max-width: 767px) {
+
+    .container {
+      margin-top: 50rem; 
+      width: 100%;
+    }
+  
+    .title img {
+      width: 100%; 
+       max-width: 100%; 
+       border-radius: 0; 
+     }
+}
+
+
+@media (max-width: 1280px) {
+
+    .container {
+      margin-top: 22rem; 
+      width: 90%;
+    }
+  
+    .title img {
+      width: 100%; 
+       max-width: 100%; 
+       border-radius: 0; 
+    }
+}
+
+
+@media (max-width: 1104px) {
+
+    .container {
+      margin-top: 27rem; 
+      width: 90%;
+    }
+  
+    .title img {
+      width: 100%; 
+      max-width: 100%; 
+      border-radius: 0; 
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .container {
+      margin-top: 45rem; 
+      width: 90%;
+    }
+  
+    .title img {
+      width: 100%; 
+      max-width: 100%; 
+      border-radius: 0; 
+    }
+}
+
+
+
+@media (max-width: 670px) {
+
+    .container {
+      margin-top: 57rem; 
+      width: 90%;
+    }
+  
+    .title img {
+      width: 100%; 
+      max-width: 100%; 
+      border-radius: 0; 
+    }
+}
